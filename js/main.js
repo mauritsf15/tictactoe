@@ -48,6 +48,13 @@ function resetGame() {
 function checkWin(player) {
     for (let i = 0; i <= 2; i++)
         if (board[i][0] == player && board[i][1] == player && board[i][2] == player) {
-            alert('win')
+            alert(player + ' win')
+        } else if (board[0][i] == player && board[1][i] == player && board[2][i] == player) {
+            alert(player + ' win')
         }
+    if (board[0][0] == player && board[1][1] == player && board[2][2]) {
+        alert (player + ' win')
+    } else if (board [0][2] == player && board[1][1] == player && board[2][0] == player) {
+        alert (player + ' win')
+    }
 }
