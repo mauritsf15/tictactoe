@@ -52,7 +52,7 @@ function checkWin(player) {
         } else if (board[0][i] == player && board[1][i] == player && board[2][i] == player) {
             alert(player + ' win')
         }
-    if (board[0][0] == player && board[1][1] == player && board[2][2]) {
+    if (board[0][0] == player && board[1][1] == player && board[2][2] == player) {
         alert (player + ' win')
     } else if (board [0][2] == player && board[1][1] == player && board[2][0] == player) {
         alert (player + ' win')
